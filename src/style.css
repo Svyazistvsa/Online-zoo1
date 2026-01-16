@@ -40,15 +40,18 @@ header {
             .bambuk {
                 display: block;
                 position: relative;
-                left: 10px;
-                top: -20px;
-                width:20px;
+                left: 9px;
+                top: -57px;
+                width: 11px;
+                height: 18px;
+                rotate: 2deg;
             }
         }
         ul {
             list-style: none;
             display: inline-flex;
             width: 973px;
+            justify-content: center;
         }
         img {
             /*display: block;*/
