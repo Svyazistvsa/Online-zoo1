@@ -42,14 +42,14 @@ header {
             margin-top: 14px;
             padding-top: 3px;
 
-            .bambuk {
+        .bambuk {
                 display: block;
                 position: relative;
-                left: 9px;
-                top: -57px;
-                width: 11px;
-                height: 18px;
-                rotate: 2deg;
+                left: 8px;
+                top: -26px;
+                width: 13px;
+                height: 20px;
+                rotate: 3deg;
             }
         }
 
