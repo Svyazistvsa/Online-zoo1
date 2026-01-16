@@ -48,10 +48,13 @@ header {
         ul {
             list-style: none;
             display: inline-flex;
-            width: 990px;
+            width: 973px;
         }
-        p {
-            
+        img {
+            /*display: block;*/
+            width: 104px;
+            height: 16px;
+            margin-top: 32px;
         }
     }
     #logo {
