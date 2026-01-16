@@ -54,10 +54,15 @@ header {
                 font-size: 16px;
                 font-weight: 500;
             }
+            li:hover {
+                color:#FE9013
+            }
+            .checked {
+                color:  #FE9013
+            }
         }        
     }
     img {
-            /*display: block;*/
             width: 104px;
             height: 16px;
             margin-top: 32px;
