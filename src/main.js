@@ -8,7 +8,7 @@ import coperite from './coperite.png'
 document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`
 document.getElementById('logoText').src = logoText;
 document.getElementsByClassName('bambuk')[0].src = bambuk;
-document.querySelector('header > img').src = coperite;
+document.querySelector('.coperite').style.backgroundImage = `url("${coperite}")`;
 
 
 
