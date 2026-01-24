@@ -190,6 +190,13 @@ main {
             bottom: -646px;
             left: 0;
         }
+        .conteiner {
+            
+            .galery {
+                display: grid;
+            
+            }
+        }
     }
     
 }
