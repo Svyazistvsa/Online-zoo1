@@ -22,6 +22,10 @@
     cursor: pointer;
 }
 
+#logo, .watch, .left, .right, .choose {
+    background: linear-gradient(90deg, #F9804B, #FE9013);
+}
+
 body {
     height: 2000px;
     width: 1600px;
@@ -98,7 +102,7 @@ header {
     background-position-y: -223px;
     color: white;
      #logo {
-        background: linear-gradient(90deg, #F9804B, #FE9013);
+        
         border-radius: 50%;
         width: 465px;
         height: 465px;
@@ -120,15 +124,14 @@ header {
         height: 54px;        
         border-radius: 50px;
         border: none;
-        background: linear-gradient(90deg, #F9804B, #FE9013);
         
-        a {
-            position: relative;
+        
+        a {            
             font-size: 16px;
             text-transform: uppercase;
             line-height: 349%;
             text-align: center;
-            padding-left: 6px;            
+            padding-left: 5px;            
         }
     }
 }
@@ -190,8 +193,52 @@ main {
             bottom: -646px;
             left: 0;
         }
+        .left, .right {
+            display: block;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            position: relative;
+            border: none;
+            img {
+                width: 17px;               
+                margin-left: 1px;
+            }
+        }
+        .left {
+            left: 137px;
+            top: -57px;
+            img{
+                transform: scale(-1, 1);
+            }
+        }
+        .right {
+            left: 1397px;
+            bottom: 991px;
+        }
+        .choose {
+            position: relative;
+            bottom: 504px;
+            left: 650px;
+            width: 298px;
+            height: 54px;
+            border-radius: 25px;
+            border: none;
+            a {            
+                font-size: 16px;
+                text-transform: uppercase;
+                line-height: 349%;
+                text-align: center;
+                padding-left: 5px;
+            }
+        }
         .conteiner {
-            
+            width: 1158px;
+            height: 872px;
+            border: 1px solid black;
+            position: relative;
+            left: 219px;
+            top: -522px;
             .galery {
                 display: grid;
             
