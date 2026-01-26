@@ -22,8 +22,22 @@
     cursor: pointer;
 }
 
-#logo, .watch, .left, .right, .choose {
-    background: linear-gradient(90deg, #F9804B, #FE9013);
+#logo, .bigButtom, .twoOneLeft > div, .twoOneRight > div, .choose {
+    background: /*linear-gradient(90deg, #F9804B, #FE9013)#ff8440f2*/ #FE9013;
+}
+
+.bigButtom{
+    width: 298px;
+    height: 54px;        
+    border-radius: 25px;
+    border: none;
+    a {            
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 349%;
+            text-align: center;
+            padding-left: 5px;            
+    }
 }
 
 body {
@@ -116,23 +130,11 @@ header {
           left: 89px;
         }
     }
-    .watch {
+    .bigButtom {
         position: relative;
         left: 983px;
         top: 80px;
-        width: 298px;
-        height: 54px;        
-        border-radius: 50px;
-        border: none;
         
-        
-        a {            
-            font-size: 16px;
-            text-transform: uppercase;
-            line-height: 349%;
-            text-align: center;
-            padding-left: 5px;            
-        }
     }
 }
 
@@ -184,64 +186,49 @@ main {
         background-repeat: no-repeat;
         background-size: 368px;
         background-position: bottom 0 right 0;
-        .decorTwo {
-            display: block;
-            background-size: 100%;
-            height: 460px;
-            width: 292px;
-            position: relative;
-            bottom: -646px;
-            left: 0;
-        }
-        .left, .right {
-            display: block;
-            width: 62px;
-            height: 62px;
-            border-radius: 50%;
-            position: relative;
-            border: none;
-            img {
-                width: 17px;               
-                margin-left: 1px;
+        display: grid;
+        grid-template-rows: 872px 234px;
+        .twoOne {
+            display: grid;
+            grid-template-columns: auto 1158px auto;
+            .twoOneCenter {
+                border: solid black 1px;
+            }
+            .twoOneLeft, .twoOneRight {
+                align-content: center;
+                .left, .right {
+                    border-radius: 50%;
+                    width: 62px;
+                    height: 62px;
+                    position: relative;
+                    bottom: 2px;
+                    img {
+                        width: 17px;
+                        position: relative;
+                        left: 23px;
+                        top: 21px;
+                    }
+                }
+            }
+            .left {
+                justify-self: right;
+                right: 20px;                
+                img {
+                    transform: scale(-1,1);
+                }
+            }
+            .right {
+                justify-self: left;
+                left: 20px;
             }
         }
-        .left {
-            left: 137px;
-            top: -57px;
-            img{
-                transform: scale(-1, 1);
-            }
-        }
-        .right {
-            left: 1397px;
-            bottom: 991px;
-        }
-        .choose {
-            position: relative;
-            bottom: 504px;
-            left: 650px;
-            width: 298px;
-            height: 54px;
-            border-radius: 25px;
-            border: none;
-            a {            
-                font-size: 16px;
-                text-transform: uppercase;
-                line-height: 349%;
-                text-align: center;
-                padding-left: 5px;
-            }
-        }
-        .conteiner {
-            width: 1158px;
-            height: 872px;
-            border: 1px solid black;
-            position: relative;
-            left: 219px;
-            top: -522px;
-            .galery {
-                display: grid;
-            
+        .twoTwo {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            .bigButtom{
+                position: relative;
+                bottom: 10px;
             }
         }
     }

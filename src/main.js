@@ -17,7 +17,7 @@ document.querySelector('.coperite').style.backgroundImage = `url("${coperite}")`
 document.getElementById('ded').style.backgroundImage = `url("${ded}")`;
 document.querySelector('.one').style.backgroundImage = `url("${leafs1}")`;
 document.querySelector('.two').style.backgroundImage = `url("${flower}")`;
-document.querySelector('.decorTwo').src = bush;
+//document.querySelector('.decorTwo').src = bush;
 document.querySelector('.left > img').src = arrow;
 document.querySelector('.right > img').src = arrow;
 
