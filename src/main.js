@@ -16,8 +16,7 @@ document.getElementsByClassName('bambuk')[0].src = bambuk;
 document.querySelector('.coperite').style.backgroundImage = `url("${coperite}")`;
 document.getElementById('ded').style.backgroundImage = `url("${ded}")`;
 document.querySelector('.one').style.backgroundImage = `url("${leafs1}")`;
-document.querySelector('.two').style.backgroundImage = `url("${flower}")`;
-//document.querySelector('.decorTwo').src = bush;
+document.querySelector('.two').style.backgroundImage = `url("${bush}"), url("${flower}")`;
 document.querySelector('.left > img').src = arrow;
 document.querySelector('.right > img').src = arrow;
 

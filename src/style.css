@@ -184,8 +184,8 @@ main {
     }
     .two{
         background-repeat: no-repeat;
-        background-size: 368px;
-        background-position: bottom 0 right 0;
+        background-size: 292px, 368px;
+        background-position: bottom 0 left 1px, bottom 0 right 0;
         display: grid;
         grid-template-rows: 872px 234px;
         .twoOne {
