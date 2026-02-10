@@ -1,5 +1,6 @@
 import 'normalize.css'
 import './style.css'
+import './cards.js'
 import headerPanda from './header-panda.jpg'
 import logoText from './logoText.png'
 import bambuk from './bambuk.png'
