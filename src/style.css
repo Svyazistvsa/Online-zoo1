@@ -192,7 +192,7 @@ main {
             display: grid;
             grid-template-columns: auto 1158px auto;
             .twoOneCenter {
-                border: solid black 1px;
+                
             }
             .twoOneLeft, .twoOneRight {
                 align-content: center;
@@ -212,7 +212,7 @@ main {
             }
             .left {
                 justify-self: right;
-                right: 20px;                
+                right: 20px;             
                 img {
                     transform: scale(-1,1);
                 }
@@ -237,4 +237,12 @@ main {
 
 footer {
 background-color: black;
+}
+
+@-moz-document url-prefix() {
+    .left {
+        position: relative;
+        left: 138px;
+    }
+    
 }
