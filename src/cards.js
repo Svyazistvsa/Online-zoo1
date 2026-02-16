@@ -1,7 +1,7 @@
 let cardsContainer = document.getElementById('cards');
 
 class card {
-    constractor({name, picture, native}){
+    constractor({name, picture, native}={}){
         this.name = name;
         this.picture = picture;
         this.native = native;
