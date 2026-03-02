@@ -17,3 +17,5 @@ let cards = [
     {name: 'Penguins', picture: 'url(./penguins.png)', native: 'Native to Antarctica'},
     {name: 'Two-toed Sloth', picture: 'url(./two-toed_sloth.png)', native: 'Mesoamerica, South America'},
 ]
+
+cards.forEach()
