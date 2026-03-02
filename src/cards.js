@@ -1,6 +1,6 @@
 let cardsContainer = document.getElementById('cards');
 
-class card {
+class Card {
     constractor({name, picture, native}={}){
         this.name = name;
         this.picture = picture;
@@ -16,6 +16,12 @@ let cards = [
     {name: 'cheetahs', picture: 'url(./cheetahs.png)', native: 'Native to Africa'},
     {name: 'Penguins', picture: 'url(./penguins.png)', native: 'Native to Antarctica'},
     {name: 'Two-toed Sloth', picture: 'url(./two-toed_sloth.png)', native: 'Mesoamerica, South America'},
-]
+];
 
-cards.forEach()
+cards.forEach(generate(item));
+
+function generate (item) {
+    let card = new Card(item);
+    card.classList.add("card");
+    cardsContainer.append(card);
+}
