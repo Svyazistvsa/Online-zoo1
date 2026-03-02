@@ -191,14 +191,16 @@ main {
         .twoOne {
             display: grid;
             grid-template-columns: auto 1158px auto;
-            .twoOneCenter {
-                
+            .twoOneCenter {                
                 #cards {
                     display: grid;
                     grid-template-columns: repeat(4, 366px);
                     column-gap: 30px;
                     grid-template-rows: repeat(2, 426px);
                     row-gap: 20px;
+                    .card{
+                        
+                    }
                 }
             }
             .twoOneLeft, .twoOneRight {
