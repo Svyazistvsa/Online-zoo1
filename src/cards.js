@@ -1,10 +1,26 @@
 let cardsContainer = document.getElementById('cards');
 
 class Card {
-    constractor({name, picture, native}={}){
+    constractor({name, picture, native}){
         this.name = name;
         this.picture = picture;
         this.native = native;
+    }
+    
+    buildNode(){
+        let figure, img, figcaption;
+        figure = document.createElement('figure');
+        img = document.createElement('img').src = this.picture;
+        figcaption = document.createElement('figcaption').innerHTML = `<span>${this.name}<span><br>${this.native}`;
+        
+        figure.append(img);
+        figure.append(figcaption);
+        figure.classList.add('card');
+        return figure;
+    }
+
+    see(){
+        alert(this.name);
     }
 }
 
@@ -18,10 +34,10 @@ let cards = [
     {name: 'Two-toed Sloth', picture: 'url(./two-toed_sloth.png)', native: 'Mesoamerica, South America'},
 ];
 
-cards.forEach(generate(item));
-
-function generate (item) {
+cards.forEach((item) => {
     let card = new Card(item);
-    card.classList.add("card");
-    cardsContainer.append(card);
-}
+    card.see();
+    let figure = card.buildNode();
+    cardsContainer.append(figure);
+}, );
+
