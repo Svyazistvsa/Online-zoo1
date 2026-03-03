@@ -208,8 +208,13 @@ main {
                             position: relative;
                             left: 16px;
                             top: 6px;
+                            font-size: 15px;
+                            font-weight: 100;
                             span {
-
+                                text-transform: uppercase;
+                                /* font-weight: bold; */
+                                font-size: 15.8px;
+                                text-shadow: 0.3px 0 0 BLACK;
                             }
                         }
                     }
