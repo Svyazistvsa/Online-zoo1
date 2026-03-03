@@ -198,8 +198,20 @@ main {
                     column-gap: 30px;
                     grid-template-rows: repeat(2, 426px);
                     row-gap: 20px;
+                    overflow: hidden;
                     .card{
-                        
+                        img {
+                            width: 366px;
+                            height: 366px;
+                        }
+                        figcaption {
+                            position: relative;
+                            left: 16px;
+                            top: 6px;
+                            span {
+
+                            }
+                        }
                     }
                 }
             }
