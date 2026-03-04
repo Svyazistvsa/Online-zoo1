@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -200,6 +200,8 @@ main {
                     row-gap: 20px;
                     overflow: hidden;
                     .card{
+                        border: 1px solid #FE9013;
+                        border-radius: 5px;
                         img {
                             width: 366px;
                             height: 366px;
@@ -209,11 +211,11 @@ main {
                             left: 16px;
                             top: 6px;
                             font-size: 15px;
-                            
+                            font-weight: 300;
                             span {
                                 text-transform: uppercase;
-                                font-size: 15.8px;
-                                text-shadow: 0.3px 0 0 BLACK;
+                                font-size: 16px;
+                                font-weight: 500;
                             }
                         }
                     }
