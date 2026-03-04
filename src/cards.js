@@ -18,6 +18,7 @@ class Card {
         foodIcon = document.createElement('img');
         foodIcon.src = this.food;
         foodIcon.classList.add('foodIcon');
+        if(this.food == "./src/meat.svg") foodIcon.classList.add('meat');
         figure.append(img);
         figure.append(figcaption);
         figure.append(foodIcon);
