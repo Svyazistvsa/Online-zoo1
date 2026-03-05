@@ -54,28 +54,36 @@
         <div class="twoOneCenter">
           <div id="cards">
             <script src="/src/cards.js"></script>
-            <script>
-              let rigthButton, leftButton, screen, cardsField, card;
+            
+          </div>
+        </div>
+        <div class="twoOneRight"><div class="right"><img src="" alt="arrow"></div></div>
+        <script>
+              let rightButton, leftButton, screen, cardsField, card;
 
-              rightButton = document.querySelector(".twoOneLeft");
-              leftButton = document.querySelector(".twoOneRight");
+              leftButton = document.querySelector(".left");
+              rightButton = document.querySelector(".right");
               screen = document.querySelector(".twoOneCenter");
               cardsField = screen.querySelector("#cards");
               card = cardsField.querySelector(".card");
 
-              rightButton.addEventListener("click", rightShift);
+              leftButton.addEventListener("click", fieldShift);
+              rightButton.addEventListener("click", fieldShift);
 
-              function rightShift() {
+              function fieldShift(e) {
                 cardWidth = card.offsetWidth;
                 gap = getComputedStyle(cardsField).columnGap;
                 shift = +cardWidth + +gap.slice(0,-2);
-                alert(shift);
+                
+                if(e.currentTarget === leftButton){
+                  cardsField.style.right = +cardsField.style.right.slice(0,-2) + shift+"px";
+                }
+                if(e.currentTarget === rightButton){
+                  cardsField.style.right = +cardsField.style.right.slice(0, -2) - shift+"px";
+                }
                 
               }
             </script>
-          </div>
-        </div>
-        <div class="twoOneRight"><div class="right"><img src="" alt="arrow"></div></div>
        </div>
        <div class="twoTwo">
         <div class="bigButtom"><a href="" class="coverLink">choose your favorite</a></div>
