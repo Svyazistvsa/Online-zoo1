@@ -57,13 +57,21 @@
             <script>
               let rigthButton, leftButton, screen, cardsField, card;
 
-              rigthButton = document.querySelector(".twoOneLeft");
+              rightButton = document.querySelector(".twoOneLeft");
               leftButton = document.querySelector(".twoOneRight");
               screen = document.querySelector(".twoOneCenter");
               cardsField = screen.querySelector("#cards");
               card = cardsField.querySelector(".card");
 
-              
+              rightButton.addEventListener("click", rightShift);
+
+              function rightShift() {
+                cardWidth = card.offsetWidth;
+                gap = getComputedStyle(cardsField).columnGap;
+                shift = +cardWidth + +gap.slice(0,-2);
+                alert(shift);
+                
+              }
             </script>
           </div>
         </div>
