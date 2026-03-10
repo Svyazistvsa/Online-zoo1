@@ -192,8 +192,7 @@ main {
             display: grid;
             grid-template-columns: auto 1158px auto;
             .twoOneCenter {                
-                #cards {
-                    position: relative;
+                #cards {                    
                     display: grid;
                     grid-template-columns: repeat(4, 366px);
                     column-gap: 30px;
