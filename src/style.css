@@ -192,13 +192,15 @@ main {
             display: grid;
             grid-template-columns: auto 1158px auto;
             .twoOneCenter {                
-                #cards {                    
+                overflow: hidden;
+                #cards {   
+                    position:relative;                 
                     display: grid;
                     grid-template-columns: repeat(4, 366px);
                     column-gap: 30px;
                     grid-template-rows: repeat(2, 426px);
-                    row-gap: 20px;
-                    overflow: hidden;
+                    row-gap: 20px;                    
+                    transition: transform 0.3s ease;
                     .card{
                         border: 1px solid #FE9013;
                         border-radius: 5px;

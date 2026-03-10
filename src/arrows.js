@@ -2,7 +2,8 @@ let leftButton = document.querySelector(".left"),
     rightButton = document.querySelector(".right"),
     screen = document.querySelector(".twoOneCenter"),
     cardsField = screen.querySelector("#cards"),
-    card = cardsField.querySelector(".card");
+    card = cardsField.querySelector(".card"),
+    currentPosition = 0;
 
     leftButton.addEventListener("click", fieldShift);
     rightButton.addEventListener("click", fieldShift);
@@ -12,11 +13,12 @@ let leftButton = document.querySelector(".left"),
       gap = getComputedStyle(cardsField).columnGap;
       shift = +cardWidth + +gap.slice(0,-2);
       
+      
       if(e.currentTarget === leftButton){
-        cardsField.style.right = +cardsField.style.right.slice(0,-2) + shift+"px";
+        currentPosition += shift;        
       }
       if(e.currentTarget === rightButton){
-        cardsField.style.right = +cardsField.style.right.slice(0, -2) - shift+"px";
+        currentPosition -= shift;
       }
-      
+      cardsField.style.transform = `translateX(${currentPosition}px)`;
     }

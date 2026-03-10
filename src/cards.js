@@ -43,3 +43,6 @@ cards.forEach((item) => {
     cardsContainer.append(figure);
 });
 
+console.log('cards.js loaded');
+// после создания карточек:
+console.log('Cards rendered:', document.querySelectorAll('.card').length);
