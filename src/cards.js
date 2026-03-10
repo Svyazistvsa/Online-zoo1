@@ -1,4 +1,6 @@
-let cardsContainer = document.getElementById('cards');
+let cardsContainer = document.getElementById('cards'),
+    count = 0,
+    cardsColumns = 3;
 
 class Card {
     constructor({name, picture, native, food}){
@@ -41,8 +43,14 @@ cards.forEach((item) => {
     let card = new Card(item);
     let figure = card.buildNode();
     cardsContainer.append(figure);
+    count += 1;
 });
 
-console.log('cards.js loaded');
-// после создания карточек:
-console.log('Cards rendered:', document.querySelectorAll('.card').length);
+function columns (count) {
+    if(count % 2 === 0) {
+        document.documentElement.style.setProperty("--cards_columns", `${count / 2}`) ;
+        return;
+    }
+    document.documentElement.style.setProperty("--cards_columns", `${Math.ceil(count / 2)}`);
+}
+columns(count);
