@@ -1,0 +1,57 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const leftButton = document.querySelector('.left');
+  const rightButton = document.querySelector('.right');
+  const screen = document.querySelector('.twoOneCenter');
+  const cardsField = screen.querySelector('#cards');
+  const cards = cardsField.querySelectorAll('.card');
+
+  // Проверка существования элементов
+  if (!leftButton || !rightButton || !cardsField || cards.length === 0) {
+    console.error('Один из элементов не найден');
+    return;
+  }
+
+  let currentPosition = 0;
+
+  function updateDimensions() {
+    const cardWidth = cards[0].offsetWidth;
+    const gap = parseInt(getComputedStyle(cardsField).columnGap, 10);
+    const totalCardsWidth = cards.length * cardWidth + (cards.length - 1) * gap;
+    const containerVisibleWidth = screen.offsetWidth;
+
+    return {
+      shift: cardWidth + gap,
+      minPosition: 0,
+      maxPosition: -(totalCardsWidth - containerVisibleWidth),
+    };
+  }
+
+  leftButton.addEventListener('click', () => {
+    const { shift, minPosition, maxPosition } = updateDimensions();
+    currentPosition += shift;
+    applyLimits(minPosition, maxPosition);
+  });
+
+  rightButton.addEventListener('click', () => {
+    const { shift, minPosition, maxPosition } = updateDimensions();
+    currentPosition -= shift;
+    applyLimits(minPosition, maxPosition);
+  });
+
+  function applyLimits(minPosition, maxPosition) {
+    // Ограничение смещения
+    if (currentPosition > minPosition) {
+      currentPosition = minPosition;
+    }
+    if (currentPosition < maxPosition) {
+      currentPosition = maxPosition;
+    }
+
+    cardsField.style.transform = `translateX(${currentPosition}px)`;
+  }
+
+  // Пересчёт при изменении размера окна
+  window.addEventListener('resize', () => {
+    applyLimits(...Object.values(updateDimensions()));
+  });
+});
