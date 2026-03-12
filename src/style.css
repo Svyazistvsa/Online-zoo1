@@ -209,10 +209,15 @@ main {
                         border-radius: 5px;
                         overflow: hidden;
                         height: 366px;
+                        object-fit: cover;
                         transition: all 0.5s ease-in-out;
                         img {
                             width: 366px;
                             height: 366px;
+                            display: block;
+                            object-fit: cover;
+                            transition: transform 0.5s ease-in-out;
+                            transform-origin: center;
                         }
                         figcaption {
                             position: relative;
@@ -245,7 +250,7 @@ main {
                     .card:hover {
                         height: 426px;
                         img {
-
+                            transform: scale(calc(1 + 10 / 366));
                         }
                     }
                 }
