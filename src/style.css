@@ -197,8 +197,7 @@ main {
             grid-template-columns: auto 1158px auto;
             .twoOneCenter {                
                 overflow: hidden;
-                #cards {   
-                             
+                #cards {                             
                     display: grid;
                     grid-template-columns: repeat(var(--cards_columns, 3), 366px);
                     column-gap: 30px;
@@ -208,6 +207,9 @@ main {
                     .card{
                         border: 1px solid #FE9013;
                         border-radius: 5px;
+                        overflow: hidden;
+                        height: 366px;
+                        transition: all 0.5s ease-in-out;
                         img {
                             width: 366px;
                             height: 366px;
@@ -238,6 +240,12 @@ main {
                             right: -85%;
                             width: 48px;
                             height: 48px;
+                        }
+                    }
+                    .card:hover {
+                        height: 426px;
+                        img {
+
                         }
                     }
                 }
