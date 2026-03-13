@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     currentPosition = 0,
     cardArr, shift, gap, cardsFieldWidth, columnCount;
 
+    if (!leftButton || !rightButton || !cardsField || cards.length === 0) {
+      console.error('Один из элементов не найден');
+      return;
+    }
+
   updateDimensions();
 
   leftButton.addEventListener("click", fieldShift);
@@ -14,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function fieldShift(e) {
   
     let max = screen.offsetWidth - cardsFieldWidth;
-  
+   
     if(e.currentTarget === leftButton && currentPosition != 0){
       currentPosition += shift;        
     }
@@ -26,20 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateDimensions() {
 
-    if (!leftButton || !rightButton || !cardsField || cards.length === 0) {
-      console.error('Один из элементов не найден');
-      return;
-    }
-
     cardArr = cardsField.querySelectorAll('.card');
-    cardWidth = cardArr[0].offsetWidth;  
+    cardWidth = parseInt(getComputedStyle(cardArr[0]).width, 10);  
     gap = parseInt(getComputedStyle(cardsField).columnGap, 10);        
     shift = cardWidth + gap;
     columnCount = parseInt(document.documentElement.style.getPropertyValue("--cards_columns"), 10);
     cardsFieldWidth = cardWidth * columnCount + gap * (columnCount - 1);
   }
 
-  window.addEventListener('resize', () => {
-    updateDimensions();
-  });
 });
+
+updateDimensions(); 
+
+window.addEventListener('resize', () => {
+   updateDimensions();
+ });

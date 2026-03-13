@@ -11,17 +11,17 @@ class Card {
     }
     
     buildNode(){
-        let figure, img, figcaption, foodIcon;
+        let figure, figcaption, foodIcon, div;
         figure = document.createElement('figure');
-        img = document.createElement('img');
-        img.src = this.picture;
+        div = document.createElement('div');
+        div.style.backgroundImage = `url('${this.picture}')`;        
         figcaption = document.createElement('figcaption');
         figcaption.innerHTML = `<span>${this.name}</span><br>${this.native}`;
         foodIcon = document.createElement('img');
         foodIcon.src = this.food;
         foodIcon.classList.add('foodIcon');
         if(this.food == "./src/meat.svg") foodIcon.classList.add('meat');
-        figure.append(img);
+        figure.append(div);
         figure.append(figcaption);
         figure.append(foodIcon);
         figure.classList.add('card');
