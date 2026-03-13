@@ -168,7 +168,7 @@ main {
                     font-weight: 400;
                 }
                 h2 + p {
-                    margin-top: 22px;
+                    margin-top: 21px;
                     line-height: 135%;
                 }
                 h4 {
@@ -177,12 +177,16 @@ main {
                     font-weight: 400;
                 }
                 h4 + p {
-                    margin-top: 33px;
+                    margin-top: 34px;
                     line-height: 22px;
                 }
             }
             #ded {
+                position: relative;
                 background-size: contain;
+                height: 403px;
+                top: -1px;
+                right: -1px;
             }
         }
     }
