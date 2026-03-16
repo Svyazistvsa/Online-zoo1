@@ -203,6 +203,7 @@ main {
         display: grid;
         grid-template-rows: 878px 228px;
         .twoOne {
+            margin-top: -5px;
             display: grid;
             grid-template-columns: auto 1164px auto;
             .twoOneCenter {                
@@ -274,7 +275,7 @@ main {
                     width: 62px;
                     height: 62px;
                     position: relative;
-                    bottom: 2px;
+                    bottom: 4px;
                     img {
                         width: 17px;
                         position: relative;
@@ -285,14 +286,14 @@ main {
             }
             .left {
                 justify-self: right;
-                right: 20px;             
+                right: 17px;             
                 img {
                     transform: scale(-1,1);
                 }
             }
             .right {
                 justify-self: left;
-                left: 20px;
+                left: 17px;
             }
         }
         .twoTwo {
@@ -301,7 +302,7 @@ main {
             align-content: center;
             .bigButton{
                 position: relative;
-                bottom: 10px;
+                bottom: 14px;
             }
         }
     }
