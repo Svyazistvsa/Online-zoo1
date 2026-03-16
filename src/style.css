@@ -260,7 +260,7 @@ main {
                     }
                     .card:hover {
                         height: 426px;
-                        box-shadow: gray 0 0 3px 1px;
+                        box-shadow: gray 0 0 3px 2px;
                         div {                             
                             background-size: 106%;
                         }

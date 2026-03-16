@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function fieldShift(e) {
   
-    let max = screen.offsetWidth - cardsFieldWidth;
+    let max = screen.offsetWidth - cardsFieldWidth ;
    
     if(e.currentTarget === leftButton && currentPosition != 0){
       currentPosition += shift;        
     }
-    if(e.currentTarget === rightButton && currentPosition != max && !!(1 - Math.sign(max))){
+    if(e.currentTarget === rightButton && currentPosition >= max && !!(1 - Math.sign(max))){
       currentPosition -= shift;
     }
     cardsField.style.transform = `translateX(${currentPosition}px)`;
@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateDimensions() {
 
     cardArr = cardsField.querySelectorAll('.card');
-    cardWidth = parseInt(getComputedStyle(cardArr[0]).width, 10);  
+    cardWidth = parseInt(window.getComputedStyle(cardsField).gridTemplateColumns);  
     gap = parseInt(getComputedStyle(cardsField).columnGap, 10);        
-    shift = cardWidth + gap;
+    shift = cardWidth + gap ;
     columnCount = parseInt(document.documentElement.style.getPropertyValue("--cards_columns"), 10);
     cardsFieldWidth = cardWidth * columnCount + gap * (columnCount - 1);
   }
@@ -42,6 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', () => {
    updateDimensions();
  });
- 
+
 });
 
