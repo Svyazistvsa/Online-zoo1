@@ -38,8 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
     columnCount = parseInt(document.documentElement.style.getPropertyValue("--cards_columns"), 10);
     cardsFieldWidth = cardWidth * columnCount + gap * (columnCount - 1);
   }
-});
 
-window.addEventListener('resize', () => {
+  window.addEventListener('resize', () => {
    updateDimensions();
  });
+ 
+});
+
