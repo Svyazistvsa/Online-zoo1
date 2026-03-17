@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateDimensions() {
 
     cardArr = cardsField.querySelectorAll('.card');
-    cardWidth = parseInt(window.getComputedStyle(cardsField).gridTemplateColumns);  
+    cardWidth = parseInt(getComputedStyle(cardsField).gridTemplateColumns);  
     gap = parseInt(getComputedStyle(cardsField).columnGap, 10);        
     shift = cardWidth + gap ;
     columnCount = parseInt(document.documentElement.style.getPropertyValue("--cards_columns"), 10);
