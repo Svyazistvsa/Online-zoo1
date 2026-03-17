@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');*/
 :root {
     --cards_columns: 3;
     --buttom_color: linear-gradient(to right,  #F9804B, #FE9013);
@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-rows: 80px 700px auto 443px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .coverLink {
@@ -303,6 +303,52 @@ main {
             .bigButton{
                 position: relative;
                 bottom: 14px;
+            }
+        }
+    }
+    .three {
+        background: linear-gradient(to bottom right, rgba(254, 189, 171, 1) 6%, rgba(254, 210, 144, 0.7) 61%, rgba(254, 210, 144, 0.7) 66%);
+        height: 1004px;
+        .pick {
+            position: relative;
+            top: 67px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1160px;
+            height: 835px;
+            background-color: rgba(253, 253, 255, 52%);
+            border-radius: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            h1 {
+                color: #FE9013;
+                font-size: 50px;
+                font-weight: 400;
+                letter-spacing: -0.9px;
+                margin-left: 3px;
+                margin-top: 43px;
+            }
+            .pickOne, .pickTwo, .pickThree {
+                align-self: start;
+                margin-left: 101px;
+            }
+            .pickOne {
+                font-size: 23px;                
+                letter-spacing: 0.45px;
+            }
+            .pickTwo {
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 41px;
+                letter-spacing: 0.06px;
+            }
+            .pickThree {
+                font-size: 16px;
+                width: 874px;
+                line-height: 125%;
+                margin-top: 12px;
+                font-weight: 400;
             }
         }
     }
