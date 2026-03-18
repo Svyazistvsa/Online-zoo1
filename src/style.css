@@ -17,6 +17,10 @@ body {
     display: grid;
     grid-template-rows: 80px 700px auto 443px;
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased; /* для Safari/Chrome */
+    -moz-osx-font-smoothing: grayscale; /* для Firefox на macOS */
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
 }
 
 .coverLink {
@@ -51,9 +55,9 @@ body {
     a {            
         font-size: 16px;
         text-transform: uppercase;
-        line-height: 349%;
+        line-height: 341%;
         text-align: center;
-        padding-left: 5px;            
+        padding-left: 7px;
     }
 }
 
@@ -174,17 +178,18 @@ main {
                     font-weight: 400;
                 }
                 h2 + p {
-                    margin-top: 21px;
-                    line-height: 135%;
+                    margin-top: 22px;
+                    line-height: 130%;
                 }
                 h4 {
                     margin-top: 54px;
                     font-size: 24px;
                     font-weight: 400;
+                    line-height: 120%;
                 }
                 h4 + p {
-                    margin-top: 34px;
-                    line-height: 22px;
+                    margin-top: 33px;
+                    line-height: 140%;
                 }
             }
             #ded {
@@ -222,7 +227,7 @@ main {
                         border: 1px solid #FE9013;
                         border-radius: 5px;
                         overflow: hidden;
-                        height: 366px;
+                        height: 426px/*366px*/;
                         transition: all 0.5s ease-in-out;
                         div {
                             width: 366px;
@@ -233,10 +238,10 @@ main {
                         }
                         figcaption {
                             position: relative;
-                            left: 16px;
-                            top: 8px;
+                            left: 15px;
+                            top: 11px;
                             font-size: 15px;
-                            font-weight: 350;
+                            font-weight: 300;
                             width: 70%;
                             span {
                                 text-transform: uppercase;
@@ -259,13 +264,13 @@ main {
                             height: 48.5px;
                         }
                     }
-                    .card:hover {
+                    /*.card:hover {
                         height: 426px;
                         box-shadow: gray 0 0 3px 2px;
                         div {                             
                             background-size: 106%;
                         }
-                    }
+                    }*/
                 }
             }
             .twoOneLeft, .twoOneRight {
@@ -332,23 +337,33 @@ main {
             .pickOne, .pickTwo, .pickThree {
                 align-self: start;
                 margin-left: 101px;
+                color: #333B41;
             }
             .pickOne {
                 font-size: 23px;                
                 letter-spacing: 0.45px;
             }
             .pickTwo {
+                line-height: 130%;
                 font-weight: 500;
                 font-size: 16px;
                 margin-top: 41px;
-                letter-spacing: 0.06px;
+                letter-spacing: 0%;
             }
             .pickThree {
                 font-size: 16px;
                 width: 874px;
-                line-height: 125%;
-                margin-top: 12px;
+                line-height: 124%;
+                margin-top: 10px;
                 font-weight: 400;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 130%;
+                letter-spacing: 0;
+                margin-top: 61px;
             }
         }
     }
