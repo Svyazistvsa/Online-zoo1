@@ -148,8 +148,7 @@ header {
     .bigButton {
         position: relative;
         left: 983px;
-        top: 80px;
-        
+        top: 80px;        
     }
 }
 
@@ -411,6 +410,11 @@ main {
                     margin-left: -4px;
                 }
                 
+            }
+            .pickSix {
+                .bigButton{
+                    margin-top: 63px;
+                }
             }
         }
     }
