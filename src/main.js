@@ -9,8 +9,12 @@ import leafs1 from './leafs1.png'
 import flower from './flower.png'
 import bush from './bush.png'
 import arrow from './arrow.png'
+import bigArrow from './big_arrow.svg'
+import handAndCard from './hand_and_card.svg'
+import handAndTree from './hand_and_tree.svg'
+import mankyAndBanana from './manky_and_banana.svg'
 
-document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`
+document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`;
 document.getElementById('logoText').src = logoText;
 document.getElementsByClassName('bambuk')[0].src = bambuk;
 document.querySelector('.coperite').style.backgroundImage = `url("${coperite}")`;

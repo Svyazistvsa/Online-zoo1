@@ -227,7 +227,7 @@ main {
                         border: 1px solid #FE9013;
                         border-radius: 5px;
                         overflow: hidden;
-                        height: 426px/*366px*/;
+                        height: 366px;
                         transition: all 0.5s ease-in-out;
                         div {
                             width: 366px;
@@ -264,13 +264,13 @@ main {
                             height: 48.5px;
                         }
                     }
-                    /*.card:hover {
+                    .card:hover {
                         height: 426px;
                         box-shadow: gray 0 0 3px 2px;
                         div {                             
                             background-size: 106%;
                         }
-                    }*/
+                    }
                 }
             }
             .twoOneLeft, .twoOneRight {
