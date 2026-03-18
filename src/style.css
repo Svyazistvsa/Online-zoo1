@@ -3,6 +3,7 @@
     --cards_columns: 3;
     --buttom_color: linear-gradient(to right,  #F9804B, #FE9013);
     --buttom_color_reverse: linear-gradient(to right, #F9804B , #FE9013 70%);
+    --img_border: linear-gradient(#F9804B, #FE9013);
 }
 
 * {
@@ -364,6 +365,52 @@ main {
                 line-height: 130%;
                 letter-spacing: 0;
                 margin-top: 61px;
+            }
+            .pickFive {
+                margin-top: 39px;
+                display: grid;
+                grid-template-columns: 168px 69px 168px 67px 168px;
+                column-gap: 31px;
+                figure > div {
+                    width: 168px;
+                    height: 168px;
+                    background-color: #fff;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-clip: border-box;
+                    border: solid 1px transparent;
+                    border-radius: 5px;
+                    figure > div::before {
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0; bottom: 0; left: 0;
+                        margin: -5px;
+                        z-index: -1;
+                        margin: 1px;
+                        border-radius: inherit;
+                        background: var(--img_border);
+                    }
+                }
+                figure > figcaption{
+                    margin-top: 30px;
+                    line-height: 22px;
+                }
+                .arrowOne, .arrowTwo {
+                    align-self: center;
+                }
+                .arrowOne {
+                    width: 71px;
+                    height: 70px;
+                    margin-top: -81px;
+                    margin-left: -1px;
+                }
+                .arrowTwo {
+                    width: 73px;
+                    height: 37.06px;
+                    margin-top: -88px;
+                    margin-left: -4px;
+                }
+                
             }
         }
     }

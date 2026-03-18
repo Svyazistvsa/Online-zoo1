@@ -43,7 +43,6 @@ cards.forEach((item) => {
     let card = new Card(item);
     let figure = card.buildNode();
     cardsContainer.append(figure);
-    //alert(parseInt(getComputedStyle(figure).width, 10));
     count += 1;
 });
 
