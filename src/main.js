@@ -13,6 +13,7 @@ import bigArrow from './big_arrow.svg'
 import handAndCard from './hand-and-card.svg'
 import handAndTree from './hand-and-tree.svg'
 import mankyAndBanana from './manky-and-banana.svg'
+import handAndTree2 from './hand-and-tree.png'
 
 document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`;
 document.getElementById('logoText').src = logoText;
@@ -27,8 +28,8 @@ document.querySelector('.right > img').src = arrow;
 let pickFive = document.querySelector('.pickFive'),
     childs = pickFive.children;
 
-childs[0].firstElementChild.style.backgroundImage = `url("${handAndCard}")`;
+childs[0].firstElementChild.firstElementChild.style.backgroundImage = `url("${handAndCard}")`;
 childs[1].src = bigArrow;
-childs[2].firstElementChild.style.backgroundImage = `url("${handAndTree}")`;
+childs[2].firstElementChild.firstElementChild.style.backgroundImage = `url("${handAndTree2}")`;
 childs[3].src = bigArrow;
-childs[4].firstElementChild.style.backgroundImage = `url("${mankyAndBanana}")`;
+childs[4].firstElementChild.firstElementChild.style.backgroundImage = `url("${mankyAndBanana}")`;

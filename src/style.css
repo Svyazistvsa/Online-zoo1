@@ -3,7 +3,7 @@
     --cards_columns: 3;
     --buttom_color: linear-gradient(to right,  #F9804B, #FE9013);
     --buttom_color_reverse: linear-gradient(to right, #F9804B , #FE9013 70%);
-    --img_border: linear-gradient(#F9804B, #FE9013);
+    --img_border: linear-gradient(#f54e05, #f88400);
 }
 
 * {
@@ -40,10 +40,11 @@ body {
     cursor: pointer;
 }
 
-#logo, .bigButton, .left, .right, .choose {
+#logo, .bigButton, .left, .right {
     background: var(--buttom_color);
 }
-.bigButton:hover, .left:hover, .right:hover, .choose:hover {
+
+.bigButton:hover, .left:hover, .right:hover {
     background: var(--buttom_color_reverse);
     box-shadow: gray 0 0 5px 1px;
 }
@@ -314,7 +315,7 @@ main {
     .three {
         background: linear-gradient(to bottom right, #FED290B2 0%, #febdabd6 3%, #fac371ab 100%);
         height: 1004px;
-        .pick {
+        .pick {            
             position: relative;
             top: 67px;
             margin-left: auto;
@@ -375,24 +376,30 @@ main {
                 grid-template-columns: 168px 69px 168px 67px 168px;
                 column-gap: 31px;
                 figure > div {
+                    padding: 1px;
                     width: 168px;
                     height: 168px;
-                    background-color: #fff;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-clip: border-box;
-                    border: solid 1px transparent;
                     border-radius: 5px;
-                    figure > div::before {
-                        content: '';
-                        position: absolute;
-                        top: 0; right: 0; bottom: 0; left: 0;
-                        margin: -5px;
-                        z-index: -1;
-                        margin: 1px;
+                    background: var(--img_border);
+                    div {
+                        width: 166px;
+                        height: 166px;
+                        background-color: #fff;
+                        background-position: center;
+                        background-repeat: no-repeat;                        
                         border-radius: inherit;
-                        background: var(--img_border);
                     }
+                    .handCard {
+                            background-size: 108px;
+                        }
+                        .handTree {
+                            background-position: 39px 37px;
+                            background-size: 86.78px 96px;
+                        }
+                        .monkey {
+                            background-size: 125.75px;
+                            background-position: 21px 47px;
+                        }
                 }
                 figure > figcaption{
                     margin-top: 30px;
@@ -415,10 +422,15 @@ main {
                 }
                 
             }
-            .pickSix {
-                .bigButton{
+            .pickSix{
+                position: relative;
+                isolation: isolate;                
+            }
+            .pickSix .bigButton {
+                
                     margin-top: 63px;
-                }
+                    position: relative;
+                    z-index: 10;
             }
         }
     }
