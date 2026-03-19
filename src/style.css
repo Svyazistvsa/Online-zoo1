@@ -59,7 +59,7 @@ body {
         text-transform: uppercase;
         line-height: 341%;
         text-align: center;
-        padding-left: 7px;
+        padding-left: 5px;
     }
 }
 
@@ -337,7 +337,7 @@ main {
             }
             .pickOne, .pickTwo, .pickThree {
                 align-self: start;
-                margin-left: 101px;
+                margin-left: 100px;
                 color: #333B41;
             }
             .pickOne {
@@ -375,6 +375,7 @@ main {
                 display: grid;
                 grid-template-columns: 168px 69px 168px 67px 168px;
                 column-gap: 31px;
+                color: #333B41;
                 figure > div {
                     padding: 1px;
                     width: 168px;
