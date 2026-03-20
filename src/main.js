@@ -11,9 +11,9 @@ import bush from './bush.png'
 import arrow from './arrow.png'
 import bigArrow from './big_arrow.svg'
 import handAndCard from './hand-and-card.svg'
-import handAndTree from './hand-and-tree.svg'
 import mankyAndBanana from './manky-and-banana.svg'
 import handAndTree2 from './hand-and-tree.png'
+import leaf from './leaf.png'
 
 document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`;
 document.getElementById('logoText').src = logoText;
@@ -24,6 +24,7 @@ document.querySelector('.one').style.backgroundImage = `url("${leafs1}")`;
 document.querySelector('.two').style.backgroundImage = `url("${bush}"), url("${flower}")`;
 document.querySelector('.left > img').src = arrow;
 document.querySelector('.right > img').src = arrow;
+document.querySelector('.four').style.backgroundImage = `url("${leaf}")`;
 
 let pickFive = document.querySelector('.pickFive'),
     childs = pickFive.children;

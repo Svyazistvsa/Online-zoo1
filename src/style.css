@@ -442,8 +442,12 @@ main {
         }
     }
     .four {
-        
-
+        background-repeat: no-repeat;
+        background-size: 246.5px;
+        background-position-x: 1354px;
+        background-position-y: 644.5px;
+        display: grid;
+        grid-template-rows: 645px auto;
     }
     
 }
