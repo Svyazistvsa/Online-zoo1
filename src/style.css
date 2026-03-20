@@ -458,8 +458,16 @@ main {
                 margin: auto;
                 margin-top: 143px;
             }
-            div {
-
+           .screen2 {
+                border: 1px solid red;
+                height: 391px;
+                width: 1160px;
+                margin: 43px auto auto auto;
+                padding: 0;
+                .cards2 {
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
         .bigButton {
@@ -469,8 +477,7 @@ main {
                 padding-left: 1px;
             }
         }
-    }
-    
+    }    
 }
 
 footer {
