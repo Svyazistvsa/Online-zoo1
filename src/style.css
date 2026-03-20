@@ -450,10 +450,23 @@ main {
         grid-template-rows: 645px auto;
         .corousel {
             h3 {
-
+                display: block;
+                width: 206px;
+                height: 47px;
+                font-size: 36px;
+                font-weight: 400;
+                margin: auto;
+                margin-top: 143px;
             }
             div {
-                
+
+            }
+        }
+        .bigButton {
+            margin: 39px auto auto 220px;
+            border-radius: 5px;
+            a {
+                padding-left: 1px;
             }
         }
     }
