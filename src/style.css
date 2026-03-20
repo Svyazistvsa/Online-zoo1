@@ -162,7 +162,7 @@ header {
 
 main {
     display: grid;
-    grid-template-rows: 723px 1106px 1004px 919px;
+    grid-template-rows: 723px 1106px 1004px 918px;
     .one {
         background-size: 204px;
         background-repeat: no-repeat;
@@ -443,11 +443,19 @@ main {
     }
     .four {
         background-repeat: no-repeat;
-        background-size: 246.5px;
+        background-size: 246.5px 407px;
         background-position-x: 1354px;
-        background-position-y: 644.5px;
+        background-position-y: 643.5px;
         display: grid;
         grid-template-rows: 645px auto;
+        .corousel {
+            h3 {
+
+            }
+            div {
+                
+            }
+        }
     }
     
 }
