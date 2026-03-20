@@ -1,8 +1,10 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');*/
 :root {
     --cards_columns: 3;
-    --buttom_color: linear-gradient(to right,  #F9804B, #FE9013);
-    --buttom_color_reverse: linear-gradient(to right, #F9804B , #FE9013 70%);
+    --button_color: linear-gradient(to right,  #F9804B, #FE9013);
+    --button_color_hover: #E47209;
+    --button_color_active: #4B9200;
+    --button_color_dis: #767474; 
     --img_border: linear-gradient(#f54e05, #f88400);
 }
 
@@ -41,13 +43,18 @@ body {
 }
 
 #logo, .bigButton, .left, .right {
-    background: var(--buttom_color);
+    background: var(--button_color);
 }
 
 .bigButton:hover, .left:hover, .right:hover {
-    background: var(--buttom_color_reverse);
-    box-shadow: gray 0 0 5px 1px;
+    background: var(--button_color_hover);
 }
+
+.bigButton:active, .left:active, .right:active {
+   background: var(--button_color_active);
+}
+
+
 
 .bigButton{
     width: 298px;
@@ -155,7 +162,7 @@ header {
 
 main {
     display: grid;
-    grid-template-rows: 723px 1106px ;
+    grid-template-rows: 723px 1106px 1004px 919px;
     .one {
         background-size: 204px;
         background-repeat: no-repeat;
@@ -314,7 +321,6 @@ main {
     }
     .three {
         background: linear-gradient(to bottom right, #FED290B2 0%, #febdabd6 3%, #fac371ab 100%);
-        height: 1004px;
         .pick {            
             position: relative;
             top: 67px;
@@ -434,6 +440,10 @@ main {
                     z-index: 10;
             }
         }
+    }
+    .four {
+        
+
     }
     
 }
