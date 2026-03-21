@@ -458,7 +458,7 @@ main {
                 margin: auto;
                 margin-top: 143px;
             }
-           .screen2 {
+            .screen2 {
                 border: 1px solid red;
                 height: 391px;
                 width: 1160px;
@@ -467,6 +467,17 @@ main {
                 .cards2 {
                     height: 100%;
                     width: 100%;
+                }
+            }
+            .divSlider {
+                width: 599px;
+                height: 8px;
+                margin: 21px auto auto auto;
+                border-radius: 5px;
+                #slider {
+                    width: 598px;
+                    border-radius: 5px; 
+                    height: 7px;
                 }
             }
         }
