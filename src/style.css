@@ -472,9 +472,12 @@ main {
             .divSlider {
                 width: 599px;
                 height: 8px;
-                margin: 21px auto auto auto;
+                margin: 15px auto auto auto;
+                padding: 0.5px;
                 border-radius: 5px;
+                background: linear-gradient(45deg, #EAF7FE, #EAF7FE, #E0D8F0, #F3A9F8A8 66%, #FEBDABBD 74%);
                 #slider {
+                    appearance: none;
                     width: 598px;
                     border-radius: 5px; 
                     height: 7px;
