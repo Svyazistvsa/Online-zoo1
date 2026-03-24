@@ -472,15 +472,20 @@ main {
             .divSlider {
                 width: 599px;
                 height: 8px;
-                margin: 15px auto auto auto;
+                margin: 22px auto auto auto;
                 padding: 0.5px;
                 border-radius: 5px;
                 background: linear-gradient(45deg, #EAF7FE, #EAF7FE, #E0D8F0, #F3A9F8A8 66%, #FEBDABBD 74%);
                 #slider {
+                    position: relative;
+                    top: -8px;
+                    left: 0.5px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
                     appearance: none;
-                    width: 598px;
-                    border-radius: 5px; 
-                    height: 7px;
+                    width: 597px;
+                    height: 6px;
+                    background: #F5F7F6;
                 }
             }
         }
