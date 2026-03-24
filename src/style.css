@@ -487,6 +487,13 @@ main {
                     height: 6px;
                     background: #F5F7F6;
                 }
+                #slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    height: 6px;
+                    width: 115.19px;
+                    background: #FE9013;
+                    border-radius: 5px;
+                }
             }
         }
         .bigButton {
