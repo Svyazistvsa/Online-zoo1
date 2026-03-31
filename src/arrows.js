@@ -1,3 +1,5 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', function() {
   let leftButton = document.querySelector(".left"),
     rightButton = document.querySelector(".right"),

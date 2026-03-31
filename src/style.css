@@ -475,25 +475,44 @@ main {
                 margin: 22px auto auto auto;
                 padding: 0.5px;
                 border-radius: 5px;
-                background: linear-gradient(45deg, #EAF7FE, #EAF7FE, #E0D8F0, #F3A9F8A8 66%, #FEBDABBD 74%);
+                background: linear-gradient(90deg, #EAF7FE, #EAF7FE, #E0D8F0, #F3A9F8A8 66%, #FEBDABBD 74%);
                 #slider {
+                    appearance: none;
+                    background: #F5F7F6;
                     position: relative;
                     top: -8px;
                     left: 0.5px;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
                     width: 597px;
                     height: 6px;
-                    background: #F5F7F6;
                 }
+
                 #slider::-webkit-slider-thumb {
-                    -webkit-appearance: none;
+                    appearance: none;
                     height: 6px;
                     width: 115.19px;
                     background: #FE9013;
                     border-radius: 5px;
                 }
+
+                #slider::-moz-renge-track {
+                    appearance: none;
+                    position: relative;
+                    top: -8.5px;
+                    left: 0.5px;
+                    height: 5px;
+                }
+
+                #slider::-moz-range-thumb {
+                    position: relative;
+                    bottom: 21px;
+                    appearance: none;
+                    border: none;
+                    height: 6px;
+                    width: 115.19px;
+                    background: #FE9013;
+                    border-radius: 5px;
+                }
+
             }
         }
         .bigButton {
@@ -514,6 +533,11 @@ background-color: black;
     .left {
         position: relative;
         left: 138px;
+    }
+
+    .divSlider {
+        width: 800px;
+        height: 9px;
     }
     
 }
