@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     screen = document.querySelector(".twoOneCenter"),
     cardsField = screen.querySelector("#cards"),        
     currentPosition = 0,
-    cardArr, shift, gap, cardsFieldWidth, columnCount;
+    cardArr, shift, gap, cardsFieldWidth, cardWidth, columnCount; 
 
     if (!leftButton || !rightButton || !cardsField || cards.length === 0) {
       console.error('Один из элементов не найден');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateDimensions() {
 
     cardArr = cardsField.querySelectorAll('.card');
-    cardWidth = parseInt(getComputedStyle(cardsField).gridTemplateColumns);  
+    cardWidth = parseInt(getComputedStyle(cardsField).gridTemplateColumns, 10);  
     gap = parseInt(getComputedStyle(cardsField).columnGap, 10);        
     shift = cardWidth + gap ;
     columnCount = parseInt(document.documentElement.style.getPropertyValue("--cards_columns"), 10);
