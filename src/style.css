@@ -461,19 +461,20 @@ main {
             }
             .screen2 {
                 height: 391px;
-                width: 1160px;
-                margin: 43px auto auto auto;
+                width: 1168px;
+                margin: 43px 212px auto auto;
                 padding: 0;
                 overflow: hidden;
                 .cards2 {
+                    margin-left: 2px;
                     display: grid;
                     grid-template-columns: repeat(var(--corousel_columns, 4), 268px);
-                    column-gap: 30px;
+                    column-gap: 29.5px;
                     & > div{
                         width: 268px;
                         height: 391px;
                         border-radius: 20px;
-                        background: linear-gradient(/*-45deg,*/ #FEBDABBD , #F3A9F8A8 , #E0D8F0, #EAF7FE, #EAF7FE);
+                        background: linear-gradient(-45deg, #FEBDABBD , #F3A9F8A8 74%, #E0D8F0 66%, #EAF7FE, #EAF7FE);
                         .card {
                             position: relative;
                             left: 2px;
@@ -518,7 +519,7 @@ main {
                     width: 237px;
                     font-size: 15px;
                     line-height: 120%;
-                    left: 16px;
+                    left: 15px;
                     top: -23px;
                     font-weight: 300;
                     color: #767474;
