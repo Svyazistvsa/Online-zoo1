@@ -1,6 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');*/
 :root {
     --cards_columns: 3;
+    --corousel_columns: 4;
     --button_color: linear-gradient(to right,  #F9804B, #FE9013);
     --button_color_hover: #E47209;
     --button_color_active: #4B9200;
@@ -459,14 +460,40 @@ main {
                 margin-top: 143px;
             }
             .screen2 {
-                border: 1px solid red;
                 height: 391px;
                 width: 1160px;
                 margin: 43px auto auto auto;
                 padding: 0;
+                overflow: hidden;
                 .cards2 {
-                    height: 100%;
-                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(var(--corousel_columns, 4), 268px);
+                    column-gap: 30px;
+                    & > div{
+                        width: 268px;
+                        height: 391px;
+                        border-radius: 20px;
+                        background: linear-gradient(/*-45deg,*/ #FEBDABBD , #F3A9F8A8 , #E0D8F0, #EAF7FE, #EAF7FE);
+                        .card {
+                            position: relative;
+                            left: 2px;
+                            top: 2px;
+                            background-color: #F1F3F2;
+                            overflow: hidden;
+                            width: 264px;
+                            height: 387px;
+                            border-radius: inherit;
+                        }
+                    }
+                }
+                 .fotoRing {
+                    margin: 12px auto auto 15px;
+                    width: 37.5px;
+                    height: 37px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 37.5px 37px;
                 }
             }
             .divSlider {
