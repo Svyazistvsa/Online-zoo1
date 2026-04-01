@@ -72,7 +72,8 @@ class SliderCards {
         bigName = document.createElement("h4");
         bigName.innerText = this.name;
         local = document.createElement("p");
-        local.innerText = "Local " + this.local + " &middot " + this.wen;
+        local.innerHTML = "Local " + this.local + " " + " &#8226 " + " " + this.wen;
+        local.classList.add("local");
         message = document.createElement("p");
         message.innerText = this.say;
         divBack.append(div);

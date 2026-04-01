@@ -485,9 +485,9 @@ main {
                             border-radius: inherit;
                             h4, p {
                                 display: block;
-                            }
-                            h4 {
                                 position: relative;
+                            }
+                            h4 {                                
                                 left: 62px;
                                 top: -36px;
                                 font-weight: 400;
@@ -503,6 +503,14 @@ main {
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 37.5px 37px;
+                }
+                .local {
+                    left: 62px;
+                    top: -34px;
+                    color: #BDBDBD;
+                    font-weight: 300;
+                    font-size: 14px;
+                    letter-spacing: 0.7px;
                 }
             }
             .divSlider {
