@@ -75,6 +75,7 @@ class SliderCards {
         local.innerHTML = "Local " + this.local + " " + " &#8226 " + " " + this.wen;
         local.classList.add("local");
         message = document.createElement("p");
+        message.classList.add("message");
         message.innerText = this.say;
         divBack.append(div);
         div.append(fotoRing);

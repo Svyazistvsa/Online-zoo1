@@ -512,6 +512,17 @@ main {
                     font-size: 14px;
                     letter-spacing: 0.7px;
                 }
+                .message {
+                    overflow: hidden;
+                    height: 309px;
+                    width: 237px;
+                    font-size: 15px;
+                    line-height: 120%;
+                    left: 16px;
+                    top: -23px;
+                    font-weight: 300;
+                    color: #767474;
+                }
             }
             .divSlider {
                 width: 599px;
