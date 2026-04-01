@@ -483,6 +483,15 @@ main {
                             width: 264px;
                             height: 387px;
                             border-radius: inherit;
+                            h4, p {
+                                display: block;
+                            }
+                            h4 {
+                                position: relative;
+                                left: 62px;
+                                top: -36px;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }

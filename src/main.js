@@ -14,7 +14,6 @@ import handAndCard from './hand-and-card.svg'
 import mankyAndBanana from './manky-and-banana.svg'
 import handAndTree2 from './hand-and-tree.png'
 import leaf from './leaf.png'
-//import noFoto from "./no_foto.png"
 
 document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`;
 document.getElementById('logoText').src = logoText;

@@ -67,8 +67,7 @@ class SliderCards {
             fotoRing.style.backgroundImage = `url('${this.foto}')`;
         } else {
             fotoRing.style.backgroundImage = no_foto;
-        }
-        
+        }        
         fotoRing.classList.add("fotoRing");
         bigName = document.createElement("h4");
         bigName.innerText = this.name;
