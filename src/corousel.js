@@ -2,7 +2,7 @@ let screen = document.querySelector(".screen2"),
     content = document.querySelector(".cards2"),
     slider = document.querySelector("#slider"),
     button = document.querySelector(".leave > .bigButton > .coverLink"),
-    contentWidth,
+    contentWidth, screenWidth,
     no_foto = "url('./src/no_foto.png')";
 
 let sliderCards = [
@@ -113,9 +113,8 @@ sliderCards.forEach((item) => {
 });
 
 function changering () {
-    let screenWidth = parseInt(getComputedStyle(screen).width, 10);
-
-        contentWidth = parseInt(getComputedStyle(content).gridTemplateColumns, 10) * sliderCards.length + parseInt(getComputedStyle(content).columnGap, 10) * (sliderCards.length -1);
+    screenWidth = parseInt(getComputedStyle(screen).width, 10);
+    contentWidth = parseInt(getComputedStyle(content).gridTemplateColumns, 10) * sliderCards.length + parseInt(getComputedStyle(content).columnGap, 10) * (sliderCards.length -1);
        
     if(screenWidth >= contentWidth){
         document.documentElement.style.setProperty('--thumb_color', '#767474');
@@ -135,9 +134,9 @@ screen.addEventListener("change", () => {
 
 slider.addEventListener("input", () => {
     let value = slider.value,
-        slide = contentWidth % 100 * value;
-        console.log(value);
-        document.documentElement.style.setProperty('--slide_change', slide + 2 + "px");
+        slide = (contentWidth - screenWidth) / 100 * value;
+        console.log(screenWidth - contentWidth);
+        document.documentElement.style.setProperty('--slide_change', (-slide) + "px");
 })
 
 changering();

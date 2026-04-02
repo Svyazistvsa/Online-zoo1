@@ -468,7 +468,7 @@ main {
                 padding: 0;
                 overflow: hidden;
                 .cards2 {
-                    margin-left: var(--slide_change/ 2px);/*2px*/
+                    margin-left: var(--slide_change, 2px);/*2px*/
                     display: grid;
                     grid-template-columns: repeat(var(--corousel_columns, 4), 268px);
                     column-gap: 29px;
