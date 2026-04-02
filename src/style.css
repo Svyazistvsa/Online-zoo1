@@ -7,7 +7,8 @@
     --button_color_active: #4B9200;
     --button_color_dis: #767474; 
     --img_border: linear-gradient(#f54e05, #f88400);
-    --thumb-color: #FE9013;
+    --thumb_color: #FE9013;
+    --slide_change: 2px;
 }
 
 * {
@@ -467,7 +468,7 @@ main {
                 padding: 0;
                 overflow: hidden;
                 .cards2 {
-                    margin-left: 2px;
+                    margin-left: var(--slide_change/ 2px);/*2px*/
                     display: grid;
                     grid-template-columns: repeat(var(--corousel_columns, 4), 268px);
                     column-gap: 29px;
@@ -547,7 +548,7 @@ main {
                     appearance: none;
                     height: 6px;
                     width: 115.19px;
-                    background: var(--thumb-color);
+                    background: var(--thumb_color);
                     border-radius: 5px;
                 }
 
@@ -566,7 +567,7 @@ main {
                     border: none;
                     height: 6px;
                     width: 115.19px;
-                    background: var(--thumb-color);
+                    background: var(--thumb_color);
                     border-radius: 5px;
                 }
 
