@@ -469,7 +469,7 @@ main {
                     margin-left: 2px;
                     display: grid;
                     grid-template-columns: repeat(var(--corousel_columns, 4), 268px);
-                    column-gap: 29.5px;
+                    column-gap: 29px;
                     & > div{
                         width: 268px;
                         height: 391px;
@@ -489,7 +489,7 @@ main {
                                 position: relative;
                             }
                             h4 {                                
-                                left: 62px;
+                                left: 61px;
                                 top: -36px;
                                 font-weight: 400;
                             }
@@ -497,8 +497,8 @@ main {
                     }
                 }
                  .fotoRing {
-                    margin: 12px auto auto 15px;
-                    width: 37.5px;
+                    margin: 14px auto auto 13px;
+                    width: 37px;
                     height: 37px;
                     border-radius: 50%;
                     background-repeat: no-repeat;
@@ -506,7 +506,7 @@ main {
                     background-size: 37.5px 37px;
                 }
                 .local {
-                    left: 62px;
+                    left: 61px;
                     top: -34px;
                     color: #BDBDBD;
                     font-weight: 300;
