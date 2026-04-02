@@ -3,8 +3,6 @@ let screen = document.querySelector(".screen2"),
     slider = document.querySelector(".divSlider"),
     button = document.querySelector(".leave > .bigButton > .coverLink"),
     no_foto = "url('./src/no_foto.png')";
-    cou = 0;
-
 
 let sliderCards = [
     {
@@ -37,6 +35,25 @@ The best online zoo I’ve met. My son delighted very much ljves to watch gouill
 The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
 `
     },
+   /* {
+        foto: './src/Mila_R.png', 
+        name: "Mila Riksha", 
+        local: "Austria", 
+        wen: "Yesterday", 
+        say: `My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+`
+    },
+    {
+        foto: './src/Fredericka_M.png', 
+        name: "Fredericka Michelin", 
+        local: "Austria", 
+        wen: "Yesterday", 
+        say: `The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+`
+    },
     {
         foto: './src/Mila_R.png', 
         name: "Mila Riksha", 
@@ -45,7 +62,7 @@ The best online zoo I’ve met. My son delighted very much ljves to watch gouill
         say: `My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
 The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
 `
-    }
+    }*/
 ];
 
 class SliderCards {
@@ -86,9 +103,38 @@ class SliderCards {
     }
 }
 
+document.documentElement.style.setProperty('--corousel_columns', sliderCards.length)
+
 sliderCards.forEach((item) => {
     let div = new SliderCards(item);
     let card = div.buildCards();
     content.append(card);
-    cou += 1;
 });
+
+function changering () {
+    let screenWidth = parseInt(getComputedStyle(screen).width, 10),
+        contentWidth = parseInt(getComputedStyle(content).gridTemplateColumns, 10) * sliderCards.length + parseInt(getComputedStyle(content).columnGap, 10) * (sliderCards.length -1);
+       
+    if(screenWidth >= contentWidth){
+        document.documentElement.style.setProperty('--thumb-color', '#767474');
+        slider.onmousedown = (e) => {
+            e.preventDefault();
+        };
+    } else {
+        document.documentElement.style.setProperty('--thumb-color', '#FE9013');
+    }
+}
+
+screen.addEventListener("change", () => {
+    changering();    
+})
+
+
+
+slider.addEventListener("change", () => {
+
+})
+
+changering();
+
+ alert( document.querySelector(".cards2 div").offsetWidth );
