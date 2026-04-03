@@ -73,7 +73,7 @@ body {
     }
 }
 
-header {
+header, footer > div {
     display: inline-flex;
     background-color: black;
     justify-content: center;
@@ -585,6 +585,41 @@ main {
 
 footer {
 background-color: black;
+display: grid;
+grid-template-columns: auto auto auto;
+    .fOne {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        h1 {
+            margin: 40px auto auto 83px;
+        }
+        .bigButton {
+            border-radius: 5px;
+        }
+        .contacts {
+            width: 400px;
+            .contact {
+                width: 100%;
+                margin-top: 17px;
+                font-size: 15px;
+                div {
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .fTwo{
+        menu {
+        ul {
+            width: 478px;
+            position: relative;
+            top: 343px;
+            left: -156px;
+        }
+        }
+    }
+       
 }
 
 @-moz-document url-prefix() {

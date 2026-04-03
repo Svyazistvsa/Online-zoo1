@@ -18,6 +18,7 @@ import leaf from './leaf.png'
 document.getElementById('logoBox').style.backgroundImage = `url("${headerPanda}")`;
 document.getElementById('logoText').src = logoText;
 document.getElementsByClassName('bambuk')[0].src = bambuk;
+document.getElementsByClassName('bambuk')[1].src = bambuk;
 document.querySelector('.coperite').style.backgroundImage = `url("${coperite}")`;
 document.getElementById('ded').style.backgroundImage = `url("${ded}")`;
 document.querySelector('.one').style.backgroundImage = `url("${leafs1}")`;
