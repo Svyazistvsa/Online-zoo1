@@ -597,11 +597,19 @@ grid-template-columns: auto auto auto;
             border-radius: 5px;
         }
         .contacts {
-            width: 400px;
+            width: 180px;
+            position: relative;
+            left: 84px;
             .contact {
                 width: 100%;
-                margin-top: 17px;
-                font-size: 15px;
+                margin-top: 18px;
+                p {
+                    position: relative;
+                    top: 5px;
+                    display: block;                    
+                    font-size: 16px;
+                }
+                
                 div {
                     float: left;
                     margin-right: 10px;
