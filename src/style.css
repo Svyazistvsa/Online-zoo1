@@ -584,7 +584,7 @@ main {
 }
 
 footer {
-background-color: black;
+background-color: #111115;
 display: grid;
 grid-template-columns: auto auto auto;
     .fOne {
@@ -592,9 +592,17 @@ grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
         h1 {
             margin: 40px auto auto 83px;
+            border: solid #5e5b5b 2px;
         }
         .bigButton {
             border-radius: 5px;
+            position: relative;
+            left: 83px;
+            top: 21px;
+            a {
+                position: relative;
+                right: 2px;
+            }
         }
         .contacts {
             width: 180px;
@@ -602,7 +610,7 @@ grid-template-columns: auto auto auto;
             left: 84px;
             .contact {
                 width: 100%;
-                margin-top: 18px;
+                margin-top: 17.5px;
                 p {
                     position: relative;
                     top: 5px;
@@ -623,7 +631,7 @@ grid-template-columns: auto auto auto;
             width: 478px;
             position: relative;
             top: 343px;
-            left: -156px;
+            left: -155px;
         }
         }
     }
