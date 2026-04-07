@@ -590,14 +590,16 @@ grid-template-columns: auto auto auto;
     .fOne {
         display: grid;
         grid-template-rows: auto auto auto;
+        margin-left: 220px;
+        padding: 0;
         h1 {
-            margin: 40px auto auto 83px;
+            margin: 40px auto auto -41px;
             border: solid #5e5b5b 2px;
         }
         .bigButton {
             border-radius: 5px;
             position: relative;
-            left: 83px;
+            left: -42px;
             top: 21px;
             a {
                 position: relative;
@@ -607,7 +609,7 @@ grid-template-columns: auto auto auto;
         .contacts {
             width: 180px;
             position: relative;
-            left: 84px;
+            left: -40px;
             .contact {
                 width: 100%;
                 margin-top: 17.5px;
@@ -627,12 +629,19 @@ grid-template-columns: auto auto auto;
     }
     .fTwo{
         menu {
-        ul {
-            width: 478px;
-            position: relative;
-            top: 343px;
-            left: -155px;
+            ul {
+                width: 478px;
+                position: relative;
+                top: 343px;
+                left: -89px;
+            }
         }
+    }
+    .fThree {
+        form {
+            border: 1px solid red;
+            height: 150px;
+            
         }
     }
        
