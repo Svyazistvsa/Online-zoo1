@@ -638,9 +638,11 @@ grid-template-columns: auto auto auto;
         }
     }
     .fThree {
+        display: grid;
+        grid-template-rows: auto auto;
         form {
             position: relative;
-            right: 181px;
+            right: 180px;
             top: 40px;
             height: 86px;
             width: 366px;
@@ -674,6 +676,15 @@ grid-template-columns: auto auto auto;
                 position: relative;
                 top: 43px;
             }
+        }
+        small {
+            position: relative;
+            top: 104px;
+            left: -42px;
+            display: block;
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 188%;
         }
     }
        
