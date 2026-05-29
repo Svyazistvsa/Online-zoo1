@@ -590,11 +590,13 @@ grid-template-columns: auto auto auto;
     .fOne {
         display: grid;
         grid-template-rows: auto auto auto;
-        margin-left: 220px;
+        margin-left: 223px;
         padding: 0;
         h1 {
-            margin: 40px auto auto -41px;
+            height: 52px;
+            margin: 42px auto auto -41px;
             border: solid #5e5b5b 2px;
+            line-height: 120%;
         }
         .bigButton {
             border-radius: 5px;
@@ -633,7 +635,7 @@ grid-template-columns: auto auto auto;
                 width: 478px;
                 position: relative;
                 top: 343px;
-                left: -89px;
+                left: -82px;
             }
         }
     }
