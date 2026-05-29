@@ -642,21 +642,38 @@ grid-template-columns: auto auto auto;
             position: relative;
             right: 181px;
             top: 40px;
-            border: 1px solid red;
             height: 86px;
             width: 366px;
             P {
-                lable {
-                font-size: 100px;
-                display: block;
                 width: 237px;
+                float: left;
+                label {
+                    font-size: 24px;
+                    padding-top: 2px;
+                    display: block;
+                    width: 237px;
                 }
                 input {
                     display: block;
-                
+                    width: 228px;
+                    height: 42px;
+                    margin-top: 14px;
+                    padding-left: 9px;
+                    color: #BDBDBD;
+                    background-color: black;
+                    border: 0.7px solid #F9804B;
+                    border-color: linear-gradient(to right, #F9804B, #FE9013);
                 }
             }
-
+            button {
+                width: 129px;
+                height: 42px;
+                border: 1px solid #4B9200;
+                border-radius: 5px;
+                color: #4B9200;
+                position: relative;
+                top: 43px;
+            }
         }
     }
        
