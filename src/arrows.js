@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(e.currentTarget === leftButton && currentPosition != 0){
       currentPosition += shift;      
     }
-    if(e.currentTarget === rightButton && currentPosition >= max && !!(1 - Math.sign(max))){
+    if(e.currentTarget === rightButton && currentPosition > max && !!(1 - Math.sign(max))){
       currentPosition -= shift;
     }
     cardsField.style.transform = `translateX(${currentPosition}px)`;
@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function buttonsColor (position, max) {
       if((1 - Math.sign(max))){
-        switch (position) {
-          case 0:
+        switch (true) {
+          case (position == 0):
             leftButton.style.background = "#333B41";
             rightButton.style.background = "";
             break;
-          case !max:
+          case (position < max):
             leftButton.style.background = "";
             rightButton.style.background = "#333B41";
             break;
