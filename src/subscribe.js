@@ -4,13 +4,15 @@ let subscribeForm = document.forms.subscribe,
     emailInput = subscribeForm.elements.email,
     submit = subscribeForm.elements.submit;
 
-emailInput.addEventListener("change", function (e) {
+emailInput.addEventListener("input", function (e) {
     const value = e.target.value;
-    const isValidDomain = value.includes("@")
+    const isValidDomain = subscribeForm.checkValidity();
     if(!isValidDomain){
-        emailInput.style.color = "#D31414";
+        submit.style.color = "";
+        submit.style.borderColor = "";
     } else {
-        emailInput.style.color = "#fff";
+        submit.style.color = "#4B9200";
+        submit.style.borderColor = "#4B9200";
     }
 });
 
