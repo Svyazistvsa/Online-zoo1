@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     screen = document.querySelector(".twoOneCenter"),
     cardsField = screen.querySelector("#cards"),        
     currentPosition = 0,
+    
     cardArr, shift, gap, cardsFieldWidth, cardWidth, columnCount; 
 
     if (!leftButton || !rightButton || !cardsField || cards.length === 0) {
@@ -15,12 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   updateDimensions();
 
+  let max = screen.offsetWidth - cardsFieldWidth;
+
+  buttonsColor(currentPosition, max);
+
   leftButton.addEventListener("click", fieldShift);
   rightButton.addEventListener("click", fieldShift);
 
   function fieldShift(e) {
   
-    let max = screen.offsetWidth - cardsFieldWidth ;
+    max = screen.offsetWidth - cardsFieldWidth ;
    
     if(e.currentTarget === leftButton && currentPosition != 0){
       currentPosition += shift;      
@@ -32,24 +37,24 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonsColor(currentPosition, max);    
   }
 
-  let buttonsColor = (position, max) => {
+  function buttonsColor (position, max) {
       if((1 - Math.sign(max))){
         switch (position) {
           case 0:
-            leftButton.style.backgroundColor = "#333B41";
-            rightButton.style.backgroundColor = "";
+            leftButton.style.background = "#333B41";
+            rightButton.style.background = "";
             break;
-          case max:
-            leftButton.style.backgroundColor = "";
-            rightButton.style.backgroundColor = "#333B41";
+          case !max:
+            leftButton.style.background = "";
+            rightButton.style.background = "#333B41";
             break;
           default:
-            leftButton.style.backgroundColor = "";
-            rightButton.style.backgroundColor = "";
+            leftButton.style.background = "";
+            rightButton.style.background = "";
         }
       } else {
-        leftButton.style.backgroundColor = "#333B41";
-        rightButton.style.backgroundColor = "#333B41";
+        leftButton.style.background = "#333B41";
+        rightButton.style.background = "#333B41";
       }
     }
 
