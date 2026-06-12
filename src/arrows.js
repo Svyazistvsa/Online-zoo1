@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function buttonsColor (position, max) {
+    
       if((1 - Math.sign(max))){
         switch (true) {
           case (position == 0):
