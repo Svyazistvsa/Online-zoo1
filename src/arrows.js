@@ -23,16 +23,37 @@ document.addEventListener('DOMContentLoaded', function() {
     let max = screen.offsetWidth - cardsFieldWidth ;
    
     if(e.currentTarget === leftButton && currentPosition != 0){
-      currentPosition += shift;        
+      currentPosition += shift;      
     }
     if(e.currentTarget === rightButton && currentPosition >= max && !!(1 - Math.sign(max))){
       currentPosition -= shift;
     }
     cardsField.style.transform = `translateX(${currentPosition}px)`;
+    buttonsColor(currentPosition, max);    
   }
 
-  function updateDimensions() {
+  let buttonsColor = (position, max) => {
+      if((1 - Math.sign(max))){
+        switch (position) {
+          case 0:
+            leftButton.style.backgroundColor = "#333B41";
+            rightButton.style.backgroundColor = "";
+            break;
+          case max:
+            leftButton.style.backgroundColor = "";
+            rightButton.style.backgroundColor = "#333B41";
+            break;
+          default:
+            leftButton.style.backgroundColor = "";
+            rightButton.style.backgroundColor = "";
+        }
+      } else {
+        leftButton.style.backgroundColor = "#333B41";
+        rightButton.style.backgroundColor = "#333B41";
+      }
+    }
 
+  function updateDimensions() {
     cardArr = cardsField.querySelectorAll('.card');
     cardWidth = parseInt(getComputedStyle(cardsField).gridTemplateColumns, 10);  
     gap = parseInt(getComputedStyle(cardsField).columnGap, 10);        
