@@ -38,7 +38,8 @@ body {
 }
 
 .checked {
-    color:  #FE9013
+    color:  #FE9013;
+    cursor: default;
 }
 
 .interactive {
