@@ -367,7 +367,8 @@ main {
                 line-height: 124%;
                 margin-top: 10px;
                 font-weight: 400;
-                span {
+                a {
+                    color: inherit;
                     text-decoration: underline solid #FE9013;
                     text-underline-offset: 6px;
                 }
@@ -442,6 +443,9 @@ main {
                     margin-top: 63px;
                     position: relative;
                     z-index: 10;
+            }
+            .pickSix .coverLink {
+                pointer-events: none;
             }
         }
     }
@@ -579,6 +583,7 @@ main {
             border-radius: 5px;
             a {
                 padding-left: 1px;
+                pointer-events: none;
             }
         }
     }    
