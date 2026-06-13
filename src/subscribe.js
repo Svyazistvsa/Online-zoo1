@@ -16,4 +16,4 @@ emailInput.addEventListener("input", function (e) {
     }
 });
 
-
+submit.addEventListener("click", (e) => e.preventDefault());
