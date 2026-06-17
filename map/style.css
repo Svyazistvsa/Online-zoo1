@@ -43,18 +43,17 @@ header, footer > div {
     justify-content: center;
     color: white;
 
-    h1 {
-            
-            display: block;
-            width: 82px;
-            height: 52px;
-            font-size: 19.1px;
-            font-weight:400;
-            line-height: 120%;
-            border: 1px solid white;
-            text-align: center;
-            margin-top: 14px;
-            padding-top: 3px;
+    h1 {            
+        display: block;
+        width: 82px;
+        height: 52px;
+        font-size: 19.1px;
+        font-weight:400;
+        line-height: 120%;
+        border: 1px solid white;
+        text-align: center;
+        margin-top: 14px;
+        padding-top: 3px;
 
         .bambuk {
                 display: block;
@@ -107,14 +106,17 @@ main {
         width: 1083.25px;
         height: 714.11px;
         background-size: cover;
-        margin: 104px 263px;
+        /*104px 263px;*/
+        position: relative;
+        top: 104px;
+        left: 263px;
     }
     .plus, .minus {
         width: 54px;
         height: 54px;
         border-radius: 4px;
         position: relative;
-        top: -141px;
+        top: 67px;
         left: 1506px;
         background-color: white;
         background-size: 59%;
@@ -122,6 +124,6 @@ main {
         background-position: center;
     }
     .minus {
-        top: -131px;
+        top: 77px;
     }
 }
