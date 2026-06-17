@@ -1,0 +1,112 @@
+:root {
+    --thumb_color: #FE9013;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 80px 938px 443px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased; /* для Safari/Chrome */
+    -moz-osx-font-smoothing: grayscale; /* для Firefox на macOS */
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+}
+
+.interactive {
+    cursor: pointer;
+}
+
+.coverLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.checked {
+    color:  var(--thumb_color);
+    cursor: default;
+}
+
+header, footer > div {
+    display: inline-flex;
+    background-color: black;
+    justify-content: center;
+    color: white;
+
+    h1 {
+            
+            display: block;
+            width: 82px;
+            height: 52px;
+            font-size: 19.1px;
+            font-weight:400;
+            line-height: 120%;
+            border: 1px solid white;
+            text-align: center;
+            margin-top: 14px;
+            padding-top: 3px;
+
+        .bambuk {
+                display: block;
+                position: relative;
+                left: 8px;
+                top: -26px;
+                width: 13px;
+                height: 20px;
+                rotate: 3deg;
+        }
+        a {
+            position: relative;
+            bottom: 67px;
+        }
+    }
+
+    menu {        
+        ul {
+            list-style: none;
+            display: inline-flex;
+            width: 973px;
+            padding-left: 6px;
+            margin-top: 31px;
+
+            li {
+                padding-left: 58px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            li>a:hover {
+                color:#FE9013
+            }
+        }        
+    }
+
+    .coperite {
+        width: 104px;
+        height: 16px;
+        margin-top: 32px;
+        background-repeat: no-repeat;
+        background-size: 99.5%;
+        background-position: center;
+    }
+}
+
+main {
+    background-color: #EAF7FE; 
+    .map {
+        width: 1083.25px;
+        height: 714.11px;
+        background-size: cover;
+        margin: 104px 263px;
+    }
+}
