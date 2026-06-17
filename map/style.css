@@ -109,4 +109,19 @@ main {
         background-size: cover;
         margin: 104px 263px;
     }
+    .plus, .minus {
+        width: 54px;
+        height: 54px;
+        border-radius: 4px;
+        position: relative;
+        top: -141px;
+        left: 1506px;
+        background-color: white;
+        background-size: 59%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .minus {
+        top: -131px;
+    }
 }
