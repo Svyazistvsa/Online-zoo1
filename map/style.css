@@ -127,3 +127,111 @@ main {
         top: 77px;
     }
 }
+footer {
+background-color: #111115;
+display: grid;
+grid-template-columns: auto auto auto;
+    .fOne {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-left: 223px;
+        padding: 0;
+        h1 {
+            height: 52px;
+            margin: 42px auto auto -41px;
+            border: solid #5e5b5b 2px;
+            line-height: 120%;
+        }
+        .bigButton {
+            border-radius: 5px;
+            position: relative;
+            left: -42px;
+            top: 21px;
+            a {
+                position: relative;
+                right: 2px;
+            }
+        }
+        .contacts {
+            width: 180px;
+            position: relative;
+            left: -40px;
+            .contact {
+                width: 100%;
+                margin-top: 17.5px;
+                p {
+                    position: relative;
+                    top: 5px;
+                    display: block;                    
+                    font-size: 16px;
+                }
+                
+                div {
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .fTwo{
+        menu {
+            ul {
+                width: 478px;
+                position: relative;
+                top: 343px;
+                left: -82px;
+            }
+        }
+    }
+    .fThree {
+        display: grid;
+        grid-template-rows: auto auto;
+        form {
+            position: relative;
+            right: 180px;
+            top: 40px;
+            height: 86px;
+            width: 366px;
+            P {
+                width: 237px;
+                float: left;
+                label {
+                    font-size: 24px;
+                    padding-top: 2px;
+                    display: block;
+                    width: 237px;
+                }
+                input {
+                    display: block;
+                    width: 228px;
+                    height: 42px;
+                    margin-top: 14px;
+                    padding-left: 9px;
+                    color: #BDBDBD;
+                    background-color: black;
+                    border: 0.7px solid #F9804B;
+                    border-color: linear-gradient(to right, #F9804B, #FE9013);
+                }
+            }
+            button {
+                width: 129px;
+                height: 42px;
+                border: 1px solid #D31414;
+                border-radius: 5px;
+                color: #D31414;
+                position: relative;
+                top: 43px;
+            }
+        }
+        small {
+            position: relative;
+            top: 104px;
+            left: -42px;
+            display: block;
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 188%;
+        }
+    }
+       
+}

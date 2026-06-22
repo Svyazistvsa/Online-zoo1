@@ -10,5 +10,5 @@ document.querySelector(".map").style.backgroundImage = `url("${map}")`;
 document.querySelector(".plus").style.backgroundImage = `url("${plus}")`
 document.querySelector(".minus").style.backgroundImage = `url("${minus}")`
 document.getElementsByClassName('bambuk')[0].src = bambuk;
-//document.getElementsByClassName('bambuk')[1].src = bambuk;
+document.getElementsByClassName('bambuk')[1].src = bambuk;
 document.querySelector('.coperite').style.backgroundImage = `url("${coperite}")`;
