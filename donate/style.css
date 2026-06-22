@@ -1,5 +1,8 @@
 :root {
     --thumb_color: #FE9013;
+    --button_color: linear-gradient(to right,  #F9804B, #FE9013);
+    --button_color_hover: #E47209;
+    --button_color_active: #4B9200;
 }
 
 * {
@@ -36,6 +39,35 @@ body {
     color:  var(--thumb_color);
     cursor: default;
 }
+
+.bigButton {
+    background: var(--button_color);
+}
+
+.bigButton:hover {
+    background: var(--button_color_hover);
+}
+
+.bigButton:active {
+   background: var(--button_color_active);
+}
+
+
+
+.bigButton{
+    width: 298px;
+    height: 54px;        
+    border-radius: 25px;
+    border: none;
+    a {            
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 341%;
+        text-align: center;
+        padding-left: 5px;
+    }
+}
+
 
 header, footer > div {
     display: inline-flex;
