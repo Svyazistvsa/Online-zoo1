@@ -82,16 +82,16 @@ header, footer > div {
 
     h1 {
             
-            display: block;
-            width: 82px;
-            height: 52px;
-            font-size: 19.1px;
-            font-weight:400;
-            line-height: 120%;
-            border: 1px solid white;
-            text-align: center;
-            margin-top: 14px;
-            padding-top: 3px;
+        display: block;
+        width: 82px;
+        height: 52px;
+        font-size: 19.1px;
+        font-weight:400;
+        line-height: 120%;
+        border: 1px solid white;
+        text-align: center;
+        margin-top: 14px;
+        padding-top: 3px;
 
         .bambuk {
                 display: block;
