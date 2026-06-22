@@ -1,0 +1,209 @@
+:root {
+    --thumb_color: #FE9013;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 80px 938px 443px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased; /* для Safari/Chrome */
+    -moz-osx-font-smoothing: grayscale; /* для Firefox на macOS */
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+}
+
+.interactive {
+    cursor: pointer;
+}
+
+.coverLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.checked {
+    color:  var(--thumb_color);
+    cursor: default;
+}
+
+header, footer > div {
+    display: inline-flex;
+    background-color: black;
+    justify-content: center;
+    color: white;
+
+    h1 {            
+        display: block;
+        width: 82px;
+        height: 52px;
+        font-size: 19.1px;
+        font-weight:400;
+        line-height: 120%;
+        border: 1px solid white;
+        text-align: center;
+        margin-top: 14px;
+        padding-top: 3px;
+
+        .bambuk {
+                display: block;
+                position: relative;
+                left: 8px;
+                top: -26px;
+                width: 13px;
+                height: 20px;
+                rotate: 3deg;
+        }
+        a {
+            position: relative;
+            bottom: 67px;
+        }
+    }
+
+    menu {        
+        ul {
+            list-style: none;
+            display: inline-flex;
+            width: 973px;
+            padding-left: 6px;
+            margin-top: 31px;
+
+            li {
+                padding-left: 58px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            li>a:hover {
+                color:#FE9013
+            }
+        }        
+    }
+
+    .coperite {
+        width: 104px;
+        height: 16px;
+        margin-top: 32px;
+        background-repeat: no-repeat;
+        background-size: 99.5%;
+        background-position: center;
+    }
+}
+footer {
+background-color: #111115;
+display: grid;
+grid-template-columns: auto auto auto;
+    .fOne {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-left: 223px;
+        padding: 0;
+        h1 {
+            height: 52px;
+            margin: 42px auto auto -41px;
+            border: solid #5e5b5b 2px;
+            line-height: 120%;
+        }
+        .bigButton {
+            border-radius: 5px;
+            position: relative;
+            left: -42px;
+            top: 21px;
+            a {
+                position: relative;
+                right: 2px;
+            }
+        }
+        .contacts {
+            width: 180px;
+            position: relative;
+            left: -40px;
+            .contact {
+                width: 100%;
+                margin-top: 17.5px;
+                p {
+                    position: relative;
+                    top: 5px;
+                    display: block;                    
+                    font-size: 16px;
+                }
+                
+                div {
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .fTwo{
+        menu {
+            ul {
+                width: 478px;
+                position: relative;
+                top: 343px;
+                left: -82px;
+            }
+        }
+    }
+    .fThree {
+        display: grid;
+        grid-template-rows: auto auto;
+        form {
+            position: relative;
+            right: 180px;
+            top: 40px;
+            height: 86px;
+            width: 366px;
+            P {
+                width: 237px;
+                float: left;
+                label {
+                    font-size: 24px;
+                    padding-top: 2px;
+                    display: block;
+                    width: 237px;
+                }
+                input {
+                    display: block;
+                    width: 228px;
+                    height: 42px;
+                    margin-top: 14px;
+                    padding-left: 9px;
+                    color: #BDBDBD;
+                    background-color: black;
+                    border: 0.7px solid #F9804B;
+                    border-color: linear-gradient(to right, #F9804B, #FE9013);
+                }
+            }
+            button {
+                width: 129px;
+                height: 42px;
+                border: 1px solid #D31414;
+                border-radius: 5px;
+                color: #D31414;
+                position: relative;
+                top: 43px;
+            }
+        }
+        small {
+            position: relative;
+            top: 104px;
+            left: -42px;
+            display: block;
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 188%;
+        }
+    }
+       
+}
