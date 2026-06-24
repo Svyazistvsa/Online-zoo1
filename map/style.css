@@ -67,7 +67,6 @@ body {
     }
 }
 
-
 header, footer > div {
     display: inline-flex;
     background-color: black;
@@ -137,7 +136,6 @@ main {
         width: 1083.25px;
         height: 714.11px;
         background-size: cover;
-        /*104px 263px;*/
         position: relative;
         top: 104px;
         left: 263px;
@@ -157,7 +155,20 @@ main {
     .minus {
         top: 77px;
     }
+
+    .plus:active, .minus:active {
+        border: solid 1px var(--button_color_active);
+        background-image: url("./green_plus.png") !important;
+        background-color: white;
+        background-size: 59%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .minus:active {
+        background-image: url("./green_minus.png") !important;
+    }
 }
+
 footer {
 background-color: #111115;
 display: grid;
