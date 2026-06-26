@@ -139,6 +139,13 @@ main {
         position: relative;
         top: 104px;
         left: 263px;
+        .point {
+            width: 25.55px;
+            height: 32px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
     }
     .plus, .minus {
         width: 54px;
