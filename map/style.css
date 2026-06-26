@@ -140,11 +140,32 @@ main {
         top: 104px;
         left: 263px;
         .point {
+            position: absolute;
             width: 25.55px;
             height: 32px;
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;
+        }
+        .one{
+            top:361.86px;
+            left:135.52px;
+        }
+        .two {
+            top: 378.85px;
+            left: 251.52px;
+        }
+        .three {
+            top:462.71px;
+            left:541.46px;
+        }
+        .four {
+            top:380.71px;
+            left:848.46px;
+        }
+        .five {
+            top:333.84px;
+            left:853.79px;
         }
     }
     .plus, .minus {
