@@ -139,6 +139,30 @@ main {
         position: relative;
         top: 104px;
         left: 263px;
+        p {
+                display: block;
+                width: 200px;
+                position: absolute;
+                color: #4F5352;
+                left: 25px;
+                top: 19px;
+                font-family: Verdana, Geneva, sans-serif;
+                font-weight: 400;
+        }
+.us {
+    top: 337.86px;
+    left: 144.75px;
+}
+.con {
+    top: 481.86px;
+    left: 563.57px;
+}
+.ch {
+    top: 368.85px;
+    left: 767.59px;
+}
+
+
         .point {
             position: absolute;
             width: 25.55px;
